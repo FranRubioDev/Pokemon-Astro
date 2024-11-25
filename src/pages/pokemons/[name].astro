@@ -23,7 +23,7 @@ export const getStaticPaths = (async() => {
 
 const {name} = Astro.params;
 const { url } = Astro.props;
-const { isBig = true } = Astro.props;
+
 
 const id = url.split('/').at(-2);
 const audioSrc = `https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/${id}.ogg`
